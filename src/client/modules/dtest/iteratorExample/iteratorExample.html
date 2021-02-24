@@ -1,0 +1,24 @@
+<template>
+  <!-- <table style="width:100%"> 
+       <tr>
+        <th>
+    <template for:each={names} for:item="name" for:index="ind">
+        <div key={name}>{ind}: {name}</div>
+    </template></th>
+    <th>
+    <template iterator:name={names}>
+        <div key={name}>{name.value}</div>
+    </template>
+</th>
+    
+</tr>
+</table> -->
+    <template for:each={data} for:item="eachPerson" for:index="ind">
+        <div key={eachPerson.name}>{ind}. {eachPerson.name} {eachPerson.age}</div>
+    </template>
+    <template iterator:eachperson={data}>
+        <div key={eachperson.value.name}>{eachperson.value.name} {eachperson.value.age}</div>
+    </template>
+
+
+</template>
