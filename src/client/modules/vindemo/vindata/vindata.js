@@ -33,4 +33,8 @@ export default class Vindata extends LightningElement {
 
     });  
  }
+ showvalue(event){
+    alert('show Value');
+ }
+
 }
